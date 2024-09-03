@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Cinemas</title>
+    <!-- BOOTSTRAP_CSS_LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+    crossorigin="anonymous">
+    <!-- CUSTOM_CSS_LINK: Listed last to override Bootstrap
+    CSS based on levels of specificity -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Custom CSS for multiple screen sizes -->
+    <link rel="stylesheet" href="./css/custom-css-media.css">
+</head>
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!-- CONTAINER_FLUID_DIV -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Academy Cinemas</a>
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- COLLAPSE/NAVBAR-COLLAPSECLASS_DIV -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Now Playing
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" 
+                        href="#ben-hur">Ben Hur</a></li>
+                      <li><a class="dropdown-item" 
+                        href="#stood-still">The Day The Earth Stood Still</a></li>
+                      <li><a class="dropdown-item" 
+                        href="#vertigo">Vertigo</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tickets">Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+        <!-- END_COLLAPSE/NAVBAR-COLLAPSECLASS_DIV -->
+          </div>
+        <!-- END_CONTAINER_FLUID_DIV -->
+        </div>
+    <!-- END_NAVBAR -->
+      </nav>
+
+
+      <!-- LOGO_HEADER -->
+      <header class="row justify-content-center">
+        <img src="./images/logo.png" 
+        class="img-fluid col-lg-6"
+        id="header-image" 
+        alt="Academy Cinemas Logo">
+      </header>
+
+
+      <!-- NOW_PLAYING_SECTION -->
+      <section>
+        <!-- CONTAINER_NOW-PLAYING_DIV -->
+        <div class="container" id="now-playing">
+            <h1>Now Playing</h1>
+
+
+            <!-- MOVIE_BEN_HUR_DIV -->
+            <div class="d-flex flex-row flex-wrap spacer" 
+            id="ben-hur">
+                <!-- .col-lg-5 mx-auto_DIV_1-->
+                <div class=".col-lg-5 mx-auto">
+                    <img src="./images/ben-hur.jpg" 
+                    class="img-fluid"
+                    alt="Ben-Hur movie poster">
+                <!-- END_.col-lg-5 mx-auto_DIV_1 -->
+                </div>
+                <!-- .col-lg-5 mx-auto_DIV_2 -->
+                <div class="card col-lg-5 mx-auto">
+                    <!-- CARD_BODY_DIV -->
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Ben-Hur
+                        </h3>
+                        <!--NEN_HUR-MOVIE_DESCRIPTION-->
+                        <p class="lead">
+                            After a Jewish prince is betrayed and 
+                            sent into slavery by a Roman friend in
+                            1st-century Jerusalem, he regains his 
+                            freedom and comes back for revenge.
+                            <br>
+                            <br>
+                            <b>Director:</b> 
+                            William Wyler
+                            <br>
+                            <b>Starting:</b> 
+                            Charlton Heston as Judah
+                            Ben-Hur r, and also features
+                            Jack Hawkins, Stephen Boyd, 
+                            Haya Harareet, and Hugh 
+                            Griffith.
+                        </p>
+                        <br>
+                        <br>
+
+                        <!-- BEN_HUR_SHOWTIMES -->
+                        <h4 class="card-title">
+                            Show Times
+                        </h4>
+                        <!-- ROW_DIV_1 -->
+                        <div class="row">
+                            <!-- COL_DIV -->
+                            <div class="col">
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">10:00 AM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">11:30 AM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">1:10 PM</a>
+                            <!-- END_COL_DIV -->
+                            </div>
+                        <!-- END_ROW_DIV_1 -->
+                        </div>
+                        <!-- ROW_DIV_2 -->
+                        <div class="row">
+                            <!-- COL_DIV -->
+                            <div class="col">
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">02:30 PM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">04:50 PM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">8:00 PM</a>
+                            <!-- END_COL_DIV -->
+                            </div>
+                        <!-- END_ROW_DIV_2 -->
+                        </div>
+                    <!-- END_CARD_BODY_DIV -->
+                    </div>
+                <!-- END_.col-lg-5 mx-auto_DIV_2 -->
+                </div>
+            <!-- END_MOVIE_BEN_HUR_DIV -->
+            </div>
+
+            
+            <!-- MOVIE_THE_DAY_THE_EARTH_STOOD_STILL_DIV -->
+            <div class="d-flex flex-row flex-wrap-reverse spacer" 
+            id="stood-still">
+                
+                <!-- .col-lg-5 mx-auto_DIV_2 -->
+                <div class="card col-lg-5 mx-auto">
+                    <!-- CARD_BODY_DIV -->
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            The Day The Earth Stood Still
+                        </h3>
+                        <!-- THE_DAY_THE_EARTH_STOOD_STILL_
+                            MOVIE_DESCRIPTION -->
+                        <p class="lead">
+                            An alien lands in Washington, D.C. and 
+                            tells the people of Earth that they must 
+                            live peacefully or be destroyed as a 
+                            danger to other planets.
+                            <br>
+                            <br>
+                            <b>Director:</b> 
+                            Robert Wise
+                            <br>
+                            <b>Starting:</b> 
+                            Michael Rennie, 
+                            Patricia Neal, 
+                            Hugh Marlowe
+                        </p>
+                        <br>
+                        <br>
+
+                        <!-- EARTH_STOOD_STILL_SHOWTIMES -->
+                        <h4 class="card-title">
+                            Show Times
+                        </h4>
+                        <!-- EARTH_STOOD_STILL_SHOWTIMES_ROW_DIV_1 -->
+                        <div class="row">
+                            <!-- EARTH_STOOD_STILL_SHOWTIMES_
+                                COL_DIV_1 -->
+                            <div class="col">
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">10:00 AM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">11:30 AM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">1:10 PM</a>
+                            <!-- END_EARTH_STOOD_STILL_SHOWTIMES_
+                                COL_DIV -->
+                            </div>
+                        <!-- END_EARTH_STOOD_STILL_SHOWTIMES_
+                            ROW_DIV_1 -->
+                        </div>
+
+                        <!-- THE_EARTH_STOOD_STILL_SHOWTIMES_
+                            ROW_DIV_2 -->
+                        <div class="row">
+                            <!-- THE_EARTH_STOOD_STILL_SHOWTIMES_
+                                COL_DIV_2 -->
+                            <div class="col">
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">02:30 PM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">04:50 PM</a>
+
+                                <a class="btn" 
+                                href="#tickets" 
+                                role="button">8:00 PM</a>
+                            <!-- END_THE_EARTH_STOOD_STILL_SHOWTIMES_
+                                COL_DIV_2 -->
+                            </div>
+                        <!-- END_THE_EARTH_STOOD_STILL_SHOWTIMES_
+                            ROW_DIV_2 -->
+                        </div>
+                    <!-- END_CARD_BODY_DIV -->
+                    </div>
+                <!-- END_.col-lg-5 mx-auto_DIV_2 -->
+                </div>
+                <!-- .col-lg-5 mx-auto_DIV_2-->
+                <div class=".col-lg-5 mx-auto">
+                    <img src="./images/earth-stood-still.jpg" 
+                    class="img-fluid"
+                    alt="The Day The Earth Stood Still movie poster">
+                <!-- END_.col-lg-5 mx-auto_DIV_2 -->
+                </div>
+            <!-- END_MOVIE_THE_DAY_THE_EARTH_STOOD_STILL_DIV -->
+            </div>
+
+
+             <!-- MOVIE_VERTIGO_DIV -->
+             <div class="d-flex flex-row flex-wrap spacer" 
+             id="vertigo">
+                 <!-- .col-lg-5 mx-auto_DIV_1-->
+                 <div class=".col-lg-5 mx-auto">
+                     <img src="./images/vertigo.jpg" 
+                     class="img-fluid"
+                     alt="Vertigo movie poster">
+                 <!-- END_.col-lg-5 mx-auto_DIV_1 -->
+                 </div>
+                 <!-- .col-lg-5 mx-auto_DIV_2 -->
+                 <div class="card col-lg-5 mx-auto">
+                     <!-- CARD_BODY_DIV -->
+                     <div class="card-body">
+                         <h3 class="card-title">
+                            Vertigo
+                         </h3>
+                         <!--VERTIGO-MOVIE_DESCRIPTION-->
+                         <p class="lead">
+                            A former San Francisco police detective 
+                            juggles wrestling with his personal 
+                            demons and becoming obsessed with the 
+                            hauntingly beautiful woman he has been 
+                            hired to trail, who may be deeply 
+                            disturbed.
+                             <br>
+                             <br>
+                             <b>Director:</b> 
+                             Alfred Hitchcock
+                             <br>
+                             <b>Starting:</b> 
+                             James Stewart,
+                             Kim Novak,
+                             Barbara Bel Geddes
+                         </p>
+                         <br>
+                         <br>
+ 
+                         <!-- VERTIGO_SHOWTIMES -->
+                         <h4 class="card-title">
+                             Show Times
+                         </h4>
+                         <!-- VERTIGO_SHOWTIMES_ROW_DIV_1 -->
+                         <div class="row">
+                             <!-- VERTIGO_SHOWTIMES_COL_DIV_1 -->
+                             <div class="col">
+ 
+                                 <a class="btn" 
+                                 href="#tickets" 
+                                 role="button">10:00 AM</a>
+ 
+                                 <a class="btn" 
+                                 href="#tickets" 
+                                 role="button">11:30 AM</a>
+ 
+                                 <a class="btn" 
+                                 href="#tickets" 
+                                 role="button">1:10 PM</a>
+                             <!-- END_VERTIGO_SHOWTIMES_COL_DIV_1 -->
+                             </div>
+                         <!-- END_VERTIGO_SHOWTIMES_ROW_DIV_1 -->
+                         </div>
+
+                         <!-- VERTIGO_SHOWTIMES_ROW_DIV_2 -->
+                         <div class="row">
+                             <!-- VERTIGO_SHOWTIMES_COL_DIV_2 -->
+                             <div class="col">
+ 
+                                 <a class="btn" 
+                                 href="#tickets" 
+                                 role="button">02:30 PM</a>
+ 
+                                 <a class="btn" 
+                                 href="#tickets" 
+                                 role="button">04:50 PM</a>
+ 
+                                 <a class="btn" 
+                                 href="#tickets" 
+                                 role="button">8:00 PM</a>
+                             <!-- END_VERTIGO_SHOWTIMES_COL_DIV_2 -->
+                             </div>
+                         <!-- END_VERTIGO_SHOWTIMES_ROW_DIV_2 -->
+                         </div>
+                     <!-- END_CARD_BODY_DIV -->
+                     </div>
+                 <!-- END_.col-lg-5 mx-auto_DIV_2 -->
+                 </div>
+             <!-- END_MOVIE_VERTIGO_DIV -->
+             </div>
+        <!-- END_CONTAINER_NOW-PLAYING_DIV -->
+        </div>
+      <!-- END_NOW_PLAYING_SECTION -->
+      </section>
+
+
+      <!-- TICKETS_SECTION -->
+      <section>
+        <!-- CONTAINER_SPACER_DIV: This div will set 
+            up the necessary stucture to use boostrap's 
+            "rows, columns, cards" -->
+        <div class="container spacer" id="tickets">
+            <h1>Tickets</h1>
+            <!-- d-flex_flex-row_flex-wrap_DIV -->
+            <div class="d-flex flex-row flex-wrap">
+                <!-- MOVIE_SELECTION_COL_DIV -->
+                <div class="col">
+                    <!-- TICKETS_SECTION_CARD_DIV -->
+                    <div class="card text-center">
+                        <h5 class="card-title">
+                            Please Select a Movie
+                        </h5>
+                        <!-- CARD_BODY_DIV -->
+                        <div class="card-body">
+                            <select class="form-select" aria-label="Movie title selection">
+                                <option selected>Select Movie</option>
+                                <option value="1">Ben-Hur</option>
+                                <option value="2">The Day The Erath Stood Still</option>
+                                <option value="3">Vertigo</option>
+                            </select>
+                        <!-- END_CARD_BODY_DIV -->
+                        </div>
+                    <!-- END_TICKETS_SECTION_CARD_DIV -->
+                    </div>
+                <!-- END_MOVIE_SELECTION_COL_DIV -->
+                </div>
+
+
+                <!-- TIME_SELECTION_COL_DIV -->
+                <div class="col">
+                    <!-- TICKETS_SECTION_CARD_DIV -->
+                    <div class="card text-center">
+                        <h5 class="card-title">
+                            Please Select a Show Time 
+                        </h5>
+                        <!-- CARD_BODY_DIV -->
+                        <div class="card-body">
+                            <select class="form-select" aria-label="Show time selection">
+                                <option selected>Select Time</option>
+                                <option value="1">10:10 AM</option>
+                                <option value="2">11:30 AM</option>
+                                <option value="3">01:10 PM</option>
+                                <option value="4">02:30 PM</option>
+                                <option value="5">04:50 PM</option>
+                                <option value="6">08:00 PM</option>
+                            </select>
+                        <!-- END_CARD_BODY_DIV -->
+                        </div>
+                    <!-- END_TICKETS_SECTION_CARD_DIV -->
+                    </div>
+                <!-- END_MOVIE_SELECTION_COL_DIV -->
+                </div>
+
+
+                <!-- NUMBER_OF_TICKETS_COL_DIV -->
+                <div class="col">
+                    <!-- TICKETS_SECTION_CARD_DIV -->
+                    <div class="card text-center">
+                        <h5 class="card-title">
+                            Please Select Number of Tickets
+                        </h5>
+                        <!-- CARD_BODY_DIV -->
+                        <div class="card-body">
+                            <input type="number" id="quantity"
+                            value="1" step="1">
+                        <!-- END_CARD_BODY_DIV -->
+                        </div>
+                    <!-- END_TICKETS_SECTION_CARD_DIV -->
+                    </div>
+                <!-- END_MOVIE_SELECTION_COL_DIV -->
+                </div>
+            <!-- END_d-flex_flex-row_flex-wrap_DIV -->
+            </div>
+
+            
+
+            <!-- BUY_TICKETS_row_justify-content-center_DIV -->
+            <div class="row justify-content-center">
+                <!-- BUY_TICKETS_col-auto_DIV -->
+                <div class="col-auto">
+
+                    <!-- BUY_TICKETS_BUTTON_CLASS_btn:
+                    Placing the yellow-btn class after
+                    tells the browser the order of 
+                    importance between the two classes -->
+                    <button type="submit" class="btn yellow-btn">
+                        Buy Tickets
+                    <!-- END_BUY_TICKETS_BUTTON_CLASS_btn -->
+                    </button>
+
+                <!-- END_BUY_TICKETS_col-auto_DIV -->
+                </div>
+            <!-- END_BUY_TICKETS_row_justify-content-center_DIV -->
+            </div>
+        <!-- CONTAINER_SPACER_DIV -->
+        </div>
+      <!-- TICKETS_SECTION -->
+      </section>
+
+      <!-- CONTACT_FORM_SECTION -->
+      <section>
+        <!-- CONTAINER_CLASS_CONTACT_ID_DIV -->
+        <div class="container" id="contact">
+            <h1>Contact Us!</h1>
+            <!-- ROW_CLASS_DIV -->
+            <div class="row gy-4">
+                <!-- COL_CLASS_DIV: First_Name -->
+                <div class="col">
+                    <input type="text"
+                    class="form-control" 
+                    placeholder="First Name">
+                <!-- END_COL_CLASS_DIV: First_Name -->
+                </div>
+                <!-- COL_CLASS_DIV: Last_Name -->
+                <div class="col">
+                    <input type="text"
+                    class="form-control" 
+                    placeholder="Last Name">
+                <!-- END_COL_CLASS_DIV: Last_Name -->
+                </div>
+                <div>
+                    <input type="email" 
+                    class="form-control"
+                    placeholder="Email">
+                </div>
+                <div>
+                    <textarea class="form-control" 
+                    rows="3"
+                    placeholder="Type Message Here...">
+                    </textarea>
+                    <button type="submit" 
+                    class="btn yellow-btn"
+                    id="contact-submit">
+                        Submit 
+                    </button>
+                </div>
+            <!-- END_ROW_CLASS_DIV -->
+            </div>
+        <!-- END_CONTAINER_CLASS_CONTACT_ID_DIV -->
+        </div>
+      <!-- END_CONTACTFORM_SECTION -->
+      </section>
+
+
+      <!-- FOOTER_SECTION -->
+      <section>
+        <!-- FOOTER_CONTAINER-fluid_DIV -->
+        <div class="container-fluid">
+            <!-- FOOTER -->
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3">
+              <p class="col-md-4 mb-0 footer-text">&copy; 2022 Academy Cinemas</p>
+          
+              <img src="./images/logo.png" class="col-md-4 footer-img" alt="Acadeny Cinemas Logo">
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#now-playing" class="nav-link px-2 footer-text">Now Playing</a></li>
+                <li class="nav-item"><a href="#tickets" class="nav-link px-2 footer-text">Tickets</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 footer-text">Contact</a></li>
+              </ul>
+            <!-- END_FOOTER -->
+            </footer>
+          <!-- END_FOOTER_CONTAINER_DIV -->
+          </div>
+      <!-- END_FOOTER_SECTION -->
+      </section>
+
+
+
+
+
+
+
+
+
+    <!-- BOOTSTRAP_JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
