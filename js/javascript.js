@@ -41,8 +41,6 @@ popoverTriggerList.forEach( function( element )
 /*const toastElList = document.querySelectorAll( '.toast' );
 const toastList = [...toastElList].map( toastEl => new bootstrap.Toast(toastEl ) );*/
 
-
-
 const toastElList = [].slice.call( document.querySelectorAll( '.toast' ) )
 
 const toastList = toastElList.map( function( toastEl )
@@ -78,7 +76,7 @@ function displaySelectedMovieOptions()
     toast.show()
 }
 
-/**                 ---- BUYTICKETS_FUNCTION ----
+/**                 ---- BUY_TICKETS_FUNCTION ----
  * Finally. I will need to tell the browser that when the "buyTickets"
  * option button is pressed to go ahead and run the 
  * "displaySelectedMovieOptions" function.
@@ -87,3 +85,64 @@ function buyTickets()
 {
     displaySelectedMovieOptions();
 }
+
+/**                 ---- JQUERY_SHRINK-N-SCROLL ----
+ * Shrinks the Header's size when the document is scrolled
+ * down to 80px
+ */
+$( document ).on( "scroll", function() 
+{
+
+    /**
+     * When the webpage is scrolled down from the top to
+     * 50px. The "if-statement" below will trigger
+     */
+    if( $( document ).scrollTop() > 50 )
+    {
+        /**
+         * Once the 50px requirement has been met. Add the
+         * "nav-shrink" class selector to the same HTML element
+         * that has the "nav" class
+         */
+        $( "nav" ).addClass( "nav-shrink" );
+        /**
+         * Adjust the position of the mobile drop menu. To 
+         * accomodate the new height decrease.
+         */
+        $( "div.navbar-collapse" ).css( "margin-top", "-6px" );
+    }
+    else
+    {
+        /**
+         * If, the webpage has not been scrolled down or, is 
+         * back at the top. The "nav-shrink" class selector
+         * is removed from the HTML element with the "nav"
+         * class selector.
+         */
+        $( "nav" ).removeClass( "nav-shrink" );
+
+        /**
+         * The margin for the drop down menu. Is now returned to 
+         * it's original amount. 
+         */
+        $( "div.navbar-collapse" ).css( "margin-top", "14px" );
+    }
+});
+
+
+// Close mobile menu when a navigation link is clicked
+$( document ).ready( function() 
+{
+    /**
+     * On click when and element contains just the nav-link
+     * class and not the dropdown-toggle. And then, also 
+     * close when an element with the class ".dropdown-item"
+     * (each movie link) has been clicked.
+     */
+    $( "navbar-nav" ).on( 'click', '.nav-link:not(".dropdown-toggle"), .dropdown-item', function()
+    {
+        // Collapse the navbar when the link or dropdown item is clicked
+        $( ".navbar-collapse" ).collapse( 'hide' ); 
+    });
+});
+
