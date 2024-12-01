@@ -4,8 +4,9 @@
 /* Fonts Yesteryear from fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
-/* Creates global CSS Variables that 
-can be reused throughout the file */
+
+/* Creates global CSS Variables that can be reused 
+throughout the file */
 :root 
 {
     --main-color: rgb( 126, 133, 130 );
@@ -29,18 +30,13 @@ body
 {
     background-image: url(../images/theater-curtains.jpg);
     
-    /* The first value (100%), sets
-    the "width" of the "background-
-    attachement". While the second 
-    value (120%), sets the "hight" 
-    of the background-attachement.
+    /* The first value (100%), sets the "width" of the 
+    "background-attachement". While the second value 
+    (120%), sets the "hight" of the background-attachement.
 
-    NOTE: By setting the height of 
-    the background-attachement to 
-    120%, the image will stretch 
-    and the bottom of the image
-    (the gray floor). Will Not be 
-    seeing on the screen.
+    NOTE: By setting the height of the background-attachement 
+    to 120%, the image will stretch and the bottom of the image
+    (the gray floor). Will Not be seeing on the screen.
 
     The 100% controls the Horizontal
     part, while the 120% controls 
@@ -77,8 +73,7 @@ body
 
 
 
- /* Affects the hover state of the 
- links in the navbar */
+ /* Affects the hover state of the links in the navbar */
  .nav-link:hover 
  {
     color: var( --main-color-transparent );
@@ -86,9 +81,8 @@ body
  }
 
 
- /* Sets the color of the link that has
- been clicked on. In other words the
- "active link" */
+ /* Sets the color of the link that has been clicked on. 
+ In other words the "active link" */
  .nav-link:focus 
  {
     color: var( --main-color-transparent );
@@ -96,8 +90,7 @@ body
  }
 
 
- /* Adjust the left padding of the 
- navbar links */
+ /* Adjust the left padding of the navbar links */
  .navbar-expand-lg
  .navbar-nav
  .nav-link
@@ -109,9 +102,8 @@ body
 
  /* MOVIE DROP DOWN MENU */
 
- /* Targets the drop down menu
- that contains the links for
- each movie title */
+ /* Targets the drop down menu that contains the links 
+ for each movie title */
  .dropdown-menu 
  {
     /* Removes the thin black border */
@@ -121,15 +113,15 @@ body
     rgba(0, 0, 0, 0.4);
     background-color: 
     var( --main-color );
-    /* overrides Bootstraps padding on
-    the top and bottom of the 
-    drop down menu */
+
+    /* overrides Bootstraps padding on the top and bottom 
+    of the drop down menu */
     padding: 0px;
  }
 
 
- /* Sets up the styling for each movie
- link in the drop down menu */
+ /* Sets up the styling for each movie link in the 
+ drop down menu */
  .dropdowm-item 
  {
     color: var( --accent-color );
@@ -137,11 +129,13 @@ body
     var( --main-font-family );
     text-align: center;
     font-size: 30px;
-    /* Adds some space to the top of
-    each link to center them */
+
+    /* Adds some space to the top of each link to 
+    center them */
     padding-top: 15px;
-    /* Adds some space to the bottom of
-    each link to center them */
+
+    /* Adds some space to the bottom of each link to 
+    center them */
     padding-bottom: 20px;
     border-bottom: 2px solid 
     rgb( 177, 77, 13 );
@@ -186,10 +180,8 @@ body
 
  h1, h3, h4, h5, p 
  {
-    /* Changes the cursor back to the
-    default arrow instead of a text 
-    cursor when hovering over a mouse
-    over text */
+    /* Changes the cursor back to the default arrow instead 
+    of a text cursor when hovering over a mouse over text */
     cursor: default;
  }
 
@@ -258,8 +250,8 @@ img
 
  
  /* BUTTONS */
- /* Creates the main styling for buttons
- that contain the Bootstrap .btn class */
+ /* Creates the main styling for buttons that contain the 
+ Bootstrap .btn class */
  .btn 
  {
     background-color: var( --main-color );
@@ -274,8 +266,8 @@ img
 
  .btn:focus 
  {
-    /* Overrides Bootstrap's dark border 
-    when the user clicks on the button */
+    /* Overrides Bootstrap's dark border when the user clicks 
+    on the button */
     border-color: transparent;
     background-color: var( --main-color );
     color: var( --accent-text-color );
@@ -289,9 +281,8 @@ img
  }
 
 
- /* Added styling for the yellow buttons, 
- for the buy tickes, and for the contact 
- form sections */
+ /* Added styling for the yellow buttons, for the buy tickes, 
+ and for the contact form sections */
  .yellow-btn 
  {
     background-color: var( --main-color-accent );
@@ -304,13 +295,10 @@ img
     margin-bottom: 40px;
  }
 
- /* Also want to insure that when the 
- button is clicked, the background 
- remains yellow and the text stays
- white. 
- NOTE: Adding a comma between the two
- class names tells the browser that 
- they are sharing properties */
+ /* Also want to insure that when the button is clicked, the 
+ background remains yellow and the text stays white. 
+ NOTE: Adding a comma between the two class names tells the 
+ browser that they are sharing properties */
  .yellow-btn:hover, .yellow-btn:focus 
  {
     background-color: var( --main-color-accent );
@@ -319,8 +307,8 @@ img
 
 
  /* TICKET_CARDS */
-/* Specifically styles the card alss within 
-the element containing the tickets ID */
+/* Specifically styles the card alss within the element containing 
+the tickets ID */
  #tickets .card 
  {
     padding: 40px;
@@ -364,8 +352,7 @@ the element containing the tickets ID */
     border: 3px solid var( --secondary-color );
     transition: 0.5s ease-in;
 
-    /* Removes the default outline set
-    by the browser */
+    /* Removes the default outline set by the browser */
     outline: 0;
  }
 
@@ -386,8 +373,8 @@ the element containing the tickets ID */
     box-shadow: 0 0 0px 0.25rem var( --main-color );
  }
 
- /* Adjust the contact form submit button
- to the right side of the screen */
+ /* Adjust the contact form submit button to the right 
+ side of the screen */
  #contact-submit 
  {
     float: right;
@@ -401,10 +388,8 @@ the element containing the tickets ID */
     border-top: 5px solid var( --main-color );
     background-color: rgba( 0, 0, 0, 0.6 );
     
-    /* Extends the footer byond the 
-    webpage on the left side and on 
-    the right side leaving no white 
-    spaces */
+    /* Extends the footer byond the webpage on the left side 
+    and on the right side leaving no white spaces */
     margin: 0px -15px 0 -15px;
  }
 
@@ -417,14 +402,29 @@ the element containing the tickets ID */
  }
 
 
- /* Specifically styles the footer
- image separate from the other images
- on the page and overrides the "img" 
- type selector styling */
+ /* Specifically styles the footer image separate from the other 
+ images on the page and overrides the "img" type selector styling */
  .footer-img 
  {
     width: auto;
     height: 130px;
+ }
+
+ /* ---- POPOVERS ---- */
+ .star-rating
+ {
+   width: 80%;
+ }
+
+
+ /* ---- TOAST ---- */
+ .custom-toast
+ {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate( -50%, -50% );
+   z-index: 1000;
  }
 
 

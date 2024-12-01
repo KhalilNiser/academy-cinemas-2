@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academy Cinemas</title>
+
     <!-- BOOTSTRAP_CSS_LINK -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
     crossorigin="anonymous">
+
     <!-- CUSTOM_CSS_LINK: Listed last to override Bootstrap
     CSS based on levels of specificity -->
     <link rel="stylesheet" href="./css/custom.css">
+
     <!-- Custom CSS for multiple screen sizes -->
     <link rel="stylesheet" href="./css/custom-css-media.css">
 </head>
@@ -20,78 +23,88 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg sticky-top">
+
         <!-- CONTAINER_FLUID_DIV -->
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Academy Cinemas</a>
-          <button class="navbar-toggler" type="button" 
-          data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Academy Cinemas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- COLLAPSE/NAVBAR-COLLAPSECLASS_DIV -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Now Playing
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" 
-                        href="#ben-hur">Ben Hur</a></li>
-                      <li><a class="dropdown-item" 
-                        href="#stood-still">The Day The Earth Stood Still</a></li>
-                      <li><a class="dropdown-item" 
-                        href="#vertigo">Vertigo</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tickets">Tickets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-        <!-- END_COLLAPSE/NAVBAR-COLLAPSECLASS_DIV -->
-          </div>
+            </button>
+            
+            <!-- COLLAPSE/NAVBAR-COLLAPSECLASS_DIV -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" 
+                        data-bs-toggle="dropdown" aria-expanded="false">Now Playing</a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#ben-hur">Ben Hur</a></li>
+
+                    <li><a class="dropdown-item" href="#stood-still">The Day The Earth Stood Still</a></li>
+                    <li><a class="dropdown-item" href="#vertigo">Vertigo</a></li>
+                </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+            <!-- END_COLLAPSE/NAVBAR-COLLAPSECLASS_DIV -->
+            </div>
+                
         <!-- END_CONTAINER_FLUID_DIV -->
         </div>
+                
     <!-- END_NAVBAR -->
-      </nav>
+    </nav>
 
 
       <!-- LOGO_HEADER -->
       <header class="row justify-content-center">
-        <img src="./images/logo.png" 
-        class="img-fluid col-lg-6"
-        id="header-image" 
-        alt="Academy Cinemas Logo">
+        <img src="./images/logo.png" class="img-fluid col-lg-6"
+        id="header-image" alt="Academy Cinemas Logo">
       </header>
 
 
       <!-- NOW_PLAYING_SECTION -->
       <section>
+        
         <!-- CONTAINER_NOW-PLAYING_DIV -->
         <div class="container" id="now-playing">
+            
             <h1>Now Playing</h1>
-
-
+            
             <!-- MOVIE_BEN_HUR_DIV -->
-            <div class="d-flex flex-row flex-wrap spacer" 
-            id="ben-hur">
+            <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
+                
                 <!-- .col-lg-5 mx-auto_DIV_1-->
-                <div class=".col-lg-5 mx-auto">
-                    <img src="./images/ben-hur.jpg" 
-                    class="img-fluid"
-                    alt="Ben-Hur movie poster">
+                <div class="col-lg-5 mx-auto">
+
+                    <span class="d-inline-block" tabindex="0" 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-img="images/four-and-half-stars.png" 
+                    data-bs-title="Ben Hur Rating">
+
+                    <img src="./images/ben-hur.jpg" class="img-fluid" alt="Ben-Hur movie poster">
+                    </span>
+                    
                 <!-- END_.col-lg-5 mx-auto_DIV_1 -->
                 </div>
+
                 <!-- .col-lg-5 mx-auto_DIV_2 -->
                 <div class="card col-lg-5 mx-auto">
+                    
                     <!-- CARD_BODY_DIV -->
                     <div class="card-body">
-                        <h3 class="card-title">
-                            Ben-Hur
-                        </h3>
+                        <h3 class="card-title">Ben-Hur</h3>
+
                         <!--NEN_HUR-MOVIE_DESCRIPTION-->
                         <p class="lead">
                             After a Jewish prince is betrayed and 
@@ -104,57 +117,47 @@
                             William Wyler
                             <br>
                             <b>Starting:</b> 
-                            Charlton Heston as Judah
-                            Ben-Hur r, and also features
-                            Jack Hawkins, Stephen Boyd, 
-                            Haya Harareet, and Hugh 
-                            Griffith.
+                            Charlton Heston as Judah Ben-Hur r, and 
+                            also features Jack Hawkins, Stephen Boyd, 
+                            Haya Harareet, and Hugh Griffith.
                         </p>
                         <br>
                         <br>
 
                         <!-- BEN_HUR_SHOWTIMES -->
-                        <h4 class="card-title">
-                            Show Times
-                        </h4>
+                        <h4 class="card-title">Show Times</h4>
+                        
                         <!-- ROW_DIV_1 -->
                         <div class="row">
+                            
                             <!-- COL_DIV -->
                             <div class="col">
+                                
+                                <a class="btn" href="#tickets" role="button">10:00 AM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">10:00 AM</a>
+                                <a class="btn" href="#tickets" role="button">11:30 AM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">11:30 AM</a>
-
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">1:10 PM</a>
+                                <a class="btn" href="#tickets" role="button">1:10 PM</a>
                             <!-- END_COL_DIV -->
                             </div>
+                            
                         <!-- END_ROW_DIV_1 -->
                         </div>
+                        
                         <!-- ROW_DIV_2 -->
                         <div class="row">
+
                             <!-- COL_DIV -->
                             <div class="col">
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">02:30 PM</a>
+                                <a class="btn" href="#tickets" role="button">02:30 PM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">04:50 PM</a>
+                                <a class="btn" href="#tickets" role="button">04:50 PM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">8:00 PM</a>
+                                <a class="btn" href="#tickets" role="button">8:00 PM</a>
                             <!-- END_COL_DIV -->
                             </div>
+
                         <!-- END_ROW_DIV_2 -->
                         </div>
                     <!-- END_CARD_BODY_DIV -->
@@ -166,18 +169,18 @@
 
             
             <!-- MOVIE_THE_DAY_THE_EARTH_STOOD_STILL_DIV -->
-            <div class="d-flex flex-row flex-wrap-reverse spacer" 
-            id="stood-still">
+            <div class="d-flex flex-row flex-wrap-reverse spacer" id="stood-still">
                 
                 <!-- .col-lg-5 mx-auto_DIV_2 -->
                 <div class="card col-lg-5 mx-auto">
+
                     <!-- CARD_BODY_DIV -->
                     <div class="card-body">
                         <h3 class="card-title">
                             The Day The Earth Stood Still
                         </h3>
-                        <!-- THE_DAY_THE_EARTH_STOOD_STILL_
-                            MOVIE_DESCRIPTION -->
+                        <!-- THE_DAY_THE_EARTH_STOOD_STILL_MOVIE_DESCRIPTION -->
+
                         <p class="lead">
                             An alien lands in Washington, D.C. and 
                             tells the people of Earth that they must 
@@ -197,89 +200,94 @@
                         <br>
 
                         <!-- EARTH_STOOD_STILL_SHOWTIMES -->
-                        <h4 class="card-title">
-                            Show Times
-                        </h4>
+                        <h4 class="card-title">Show Times</h4>
+
                         <!-- EARTH_STOOD_STILL_SHOWTIMES_ROW_DIV_1 -->
                         <div class="row">
-                            <!-- EARTH_STOOD_STILL_SHOWTIMES_
-                                COL_DIV_1 -->
+
+                            <!-- EARTH_STOOD_STILL_SHOWTIMES_COL_DIV_1 -->
                             <div class="col">
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">10:00 AM</a>
+                                <a class="btn" href="#tickets" role="button">10:00 AM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">11:30 AM</a>
+                                <a class="btn" href="#tickets" role="button">11:30 AM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">1:10 PM</a>
-                            <!-- END_EARTH_STOOD_STILL_SHOWTIMES_
-                                COL_DIV -->
+                                <a class="btn" href="#tickets" role="button">1:10 PM</a>
+
+                            <!-- END_EARTH_STOOD_STILL_SHOWTIMES_COL_DIV -->
                             </div>
-                        <!-- END_EARTH_STOOD_STILL_SHOWTIMES_
-                            ROW_DIV_1 -->
+
+                        <!-- END_EARTH_STOOD_STILL_SHOWTIMES_ROW_DIV_1 -->
                         </div>
 
-                        <!-- THE_EARTH_STOOD_STILL_SHOWTIMES_
-                            ROW_DIV_2 -->
+                        <!-- THE_EARTH_STOOD_STILL_SHOWTIMES_ROW_DIV_2 -->
                         <div class="row">
-                            <!-- THE_EARTH_STOOD_STILL_SHOWTIMES_
-                                COL_DIV_2 -->
+
+                            <!-- THE_EARTH_STOOD_STILL_SHOWTIMES_COL_DIV_2 -->
                             <div class="col">
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">02:30 PM</a>
+                                <a class="btn" href="#tickets" role="button">02:30 PM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">04:50 PM</a>
+                                <a class="btn" href="#tickets" role="button">04:50 PM</a>
 
-                                <a class="btn" 
-                                href="#tickets" 
-                                role="button">8:00 PM</a>
-                            <!-- END_THE_EARTH_STOOD_STILL_SHOWTIMES_
-                                COL_DIV_2 -->
+                                <a class="btn" href="#tickets" role="button">8:00 PM</a>
+
+                            <!-- END_THE_EARTH_STOOD_STILL_SHOWTIMES_COL_DIV_2 -->
                             </div>
-                        <!-- END_THE_EARTH_STOOD_STILL_SHOWTIMES_
-                            ROW_DIV_2 -->
+
+                        <!-- END_THE_EARTH_STOOD_STILL_SHOWTIMES_ROW_DIV_2 -->
                         </div>
                     <!-- END_CARD_BODY_DIV -->
-                    </div>
-                <!-- END_.col-lg-5 mx-auto_DIV_2 -->
+                    </div><!-- END_.col-lg-5 mx-auto_DIV_2 -->
+                
                 </div>
+                
                 <!-- .col-lg-5 mx-auto_DIV_2-->
-                <div class=".col-lg-5 mx-auto">
-                    <img src="./images/earth-stood-still.jpg" 
-                    class="img-fluid"
+                <div class="col-lg-5 mx-auto">
+
+                    <span class="d-inline-block" tabindex="0" 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-img="images/four-stars.png" 
+                    data-bs-title="The Day The Earth Stood Still Rating">
+
+                    <img src="./images/earth-stood-still.jpg" class="img-fluid" 
                     alt="The Day The Earth Stood Still movie poster">
+                    </span>
+
                 <!-- END_.col-lg-5 mx-auto_DIV_2 -->
                 </div>
+
             <!-- END_MOVIE_THE_DAY_THE_EARTH_STOOD_STILL_DIV -->
             </div>
 
 
              <!-- MOVIE_VERTIGO_DIV -->
-             <div class="d-flex flex-row flex-wrap spacer" 
-             id="vertigo">
+             <div class="d-flex flex-row flex-wrap spacer" id="vertigo">
+
                  <!-- .col-lg-5 mx-auto_DIV_1-->
-                 <div class=".col-lg-5 mx-auto">
-                     <img src="./images/vertigo.jpg" 
-                     class="img-fluid"
+                 <div class="col-lg-5 mx-auto">
+                    
+                    <span class="d-inline-block" tabindex="0" 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-img="images/four-and-half-stars.png" 
+                    data-bs-title="Vertigo Rating">
+
+                    <img src="./images/vertigo.jpg" class="img-fluid"
                      alt="Vertigo movie poster">
+                    </span>
+
                  <!-- END_.col-lg-5 mx-auto_DIV_1 -->
                  </div>
+
                  <!-- .col-lg-5 mx-auto_DIV_2 -->
                  <div class="card col-lg-5 mx-auto">
+
                      <!-- CARD_BODY_DIV -->
                      <div class="card-body">
-                         <h3 class="card-title">
-                            Vertigo
-                         </h3>
+                         <h3 class="card-title">Vertigo</h3>
+
                          <!--VERTIGO-MOVIE_DESCRIPTION-->
                          <p class="lead">
                             A former San Francisco police detective 
@@ -302,46 +310,44 @@
                          <br>
  
                          <!-- VERTIGO_SHOWTIMES -->
-                         <h4 class="card-title">
-                             Show Times
-                         </h4>
+                         <h4 class="card-title">Show Times</h4>
+
                          <!-- VERTIGO_SHOWTIMES_ROW_DIV_1 -->
                          <div class="row">
+
                              <!-- VERTIGO_SHOWTIMES_COL_DIV_1 -->
                              <div class="col">
  
                                  <a class="btn" 
-                                 href="#tickets" 
-                                 role="button">10:00 AM</a>
+                                 href="#tickets" role="button">10:00 AM</a>
  
                                  <a class="btn" 
-                                 href="#tickets" 
-                                 role="button">11:30 AM</a>
+                                 href="#tickets" role="button">11:30 AM</a>
  
                                  <a class="btn" 
-                                 href="#tickets" 
-                                 role="button">1:10 PM</a>
+                                 href="#tickets" role="button">1:10 PM</a>
+
                              <!-- END_VERTIGO_SHOWTIMES_COL_DIV_1 -->
                              </div>
+
                          <!-- END_VERTIGO_SHOWTIMES_ROW_DIV_1 -->
                          </div>
 
                          <!-- VERTIGO_SHOWTIMES_ROW_DIV_2 -->
                          <div class="row">
+
                              <!-- VERTIGO_SHOWTIMES_COL_DIV_2 -->
                              <div class="col">
  
                                  <a class="btn" 
-                                 href="#tickets" 
-                                 role="button">02:30 PM</a>
+                                 href="#tickets" role="button">02:30 PM</a>
  
                                  <a class="btn" 
-                                 href="#tickets" 
-                                 role="button">04:50 PM</a>
+                                 href="#tickets" role="button">04:50 PM</a>
  
                                  <a class="btn" 
-                                 href="#tickets" 
-                                 role="button">8:00 PM</a>
+                                 href="#tickets" role="button">8:00 PM</a>
+
                              <!-- END_VERTIGO_SHOWTIMES_COL_DIV_2 -->
                              </div>
                          <!-- END_VERTIGO_SHOWTIMES_ROW_DIV_2 -->
@@ -358,15 +364,17 @@
       </section>
 
 
-      <!-- TICKETS_SECTION -->
+      <!-- ---- TICKET_SECTION ---- -->
       <section>
-        <!-- CONTAINER_SPACER_DIV: This div will set 
-            up the necessary stucture to use boostrap's 
-            "rows, columns, cards" -->
+
+        <!-- CONTAINER_SPACER_DIV: This div will set up the necessary 
+            stucture to use boostrap's "rows, columns, cards" -->
         <div class="container spacer" id="tickets">
             <h1>Tickets</h1>
+
             <!-- d-flex_flex-row_flex-wrap_DIV -->
             <div class="d-flex flex-row flex-wrap">
+
                 <!-- MOVIE_SELECTION_COL_DIV -->
                 <div class="col">
                     <!-- TICKETS_SECTION_CARD_DIV -->
@@ -376,7 +384,7 @@
                         </h5>
                         <!-- CARD_BODY_DIV -->
                         <div class="card-body">
-                            <select class="form-select" aria-label="Movie title selection">
+                            <select id="movieSelect" class="form-select" aria-label="Movie title selection">
                                 <option selected>Select Movie</option>
                                 <option value="1">Ben-Hur</option>
                                 <option value="2">The Day The Erath Stood Still</option>
@@ -399,7 +407,7 @@
                         </h5>
                         <!-- CARD_BODY_DIV -->
                         <div class="card-body">
-                            <select class="form-select" aria-label="Show time selection">
+                            <select id="timeSelect" class="form-select" aria-label="Show time selection">
                                 <option selected>Select Time</option>
                                 <option value="1">10:10 AM</option>
                                 <option value="2">11:30 AM</option>
@@ -443,11 +451,10 @@
                 <!-- BUY_TICKETS_col-auto_DIV -->
                 <div class="col-auto">
 
-                    <!-- BUY_TICKETS_BUTTON_CLASS_btn:
-                    Placing the yellow-btn class after
-                    tells the browser the order of 
-                    importance between the two classes -->
-                    <button type="submit" class="btn yellow-btn">
+                    <!-- BUY_TICKETS_BUTTON_CLASS_btn: Placing the yellow-btn 
+                        class after tells the browser the order of importance 
+                        between the two classes -->
+                    <button type="submit" class="btn yellow-btn" onclick="buyTickets()">
                         Buy Tickets
                     <!-- END_BUY_TICKETS_BUTTON_CLASS_btn -->
                     </button>
@@ -458,8 +465,30 @@
             </div>
         <!-- CONTAINER_SPACER_DIV -->
         </div>
-      <!-- TICKETS_SECTION -->
+      <!-- END_TICKET_SECTION -->
       </section>
+
+      <!-- ---- BOOTSTRAP_TOAST ---- -->
+      <!-- ---- TOAST_CLASSS_DIV ---- -->
+      <div id="toastDisplay" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+
+        <!-- ---- TOAST-HEADER_CLASS_DIV ---- -->
+        <div class="toast-header">
+
+          <strong class="me-auto">Ticket Information</strong>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="custom-toast toast" aria-label="Close"></button>
+        <!-- ---- END_TOAST-HEADER_CLASS_DIV ---- -->  
+        </div>
+
+        <div id="toastBody" class="toast-body">
+          <!-- Selected Options Will be Displayed Here -->
+        </div>
+      <!-- ---- TOAST_CLASSS_DIV ---- -->  
+      </div>
+      <!-- ---- END_BOOTSTRAP_TOAST ---- -->
+
+
 
       <!-- CONTACT_FORM_SECTION -->
       <section>
@@ -470,39 +499,37 @@
             <div class="row gy-4">
                 <!-- COL_CLASS_DIV: First_Name -->
                 <div class="col">
-                    <input type="text"
-                    class="form-control" 
+                    <input type="text" class="form-control" 
                     placeholder="First Name">
                 <!-- END_COL_CLASS_DIV: First_Name -->
                 </div>
                 <!-- COL_CLASS_DIV: Last_Name -->
                 <div class="col">
-                    <input type="text"
-                    class="form-control" 
+                    <input type="text" class="form-control" 
                     placeholder="Last Name">
                 <!-- END_COL_CLASS_DIV: Last_Name -->
                 </div>
                 <div>
-                    <input type="email" 
-                    class="form-control"
+                    <input type="email" class="form-control"
                     placeholder="Email">
                 </div>
+
                 <div>
-                    <textarea class="form-control" 
-                    rows="3"
+                    <textarea class="form-control" rows="3"
                     placeholder="Type Message Here...">
                     </textarea>
-                    <button type="submit" 
-                    class="btn yellow-btn"
+
+                    <button type="submit" class="btn yellow-btn"
                     id="contact-submit">
                         Submit 
                     </button>
+
                 </div>
             <!-- END_ROW_CLASS_DIV -->
             </div>
         <!-- END_CONTAINER_CLASS_CONTACT_ID_DIV -->
         </div>
-      <!-- END_CONTACTFORM_SECTION -->
+      <!-- END_CONTACT_FORM_SECTION -->
       </section>
 
 
@@ -527,18 +554,20 @@
           </div>
       <!-- END_FOOTER_SECTION -->
       </section>
-
-
-
-
-
-
-
-
-
-    <!-- BOOTSTRAP_JAVASCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
-    crossorigin="anonymous"></script>
+      
+      
+      
+      
+      
+      <!-- ---- POPPER_JAVASCRIPT ---- -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+      crossorigin="anonymous"></script>
+      <!-- ---- BOOTSTRAP_JAVASCRIPT ---- -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+      crossorigin="anonymous"></script>
+      <!-- ---- LINK_JAVASCRIPT ---- -->
+      <script type="text/javascript" src="/js/javascript.js"></script>
 </body>
 </html>
